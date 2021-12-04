@@ -7,5 +7,5 @@
 <li><i class="uil uil-html5">HTML</i></li>
 <li><i class="uil uil-css3-simple">CSS</i></li>
 <li><i class="uil uil-java-script">JavaScript</i></li>
-<li><i class="uil uil-bootstrap-fill">CSS</i></li>
+<li><i class="uil uil-bootstrap-fill">Bootstrap</i></li>
 </ul>
