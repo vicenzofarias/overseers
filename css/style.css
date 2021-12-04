@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --white: #ffffff;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  width: 160px;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-width: 2px;
+}
+
+/* home */
+.hero {
+  background-image: url(../img/bg-home.svg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 20, 51, 0.8);
+  z-index: -1;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* criadores e desenvolvedor */
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  padding: 25px;
+  transition: all 0.35 ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(10px);
+}
+
+.profile img {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body);
+  color: var(--white);
+  font-size: 32px;
+  border-radius: 100px;
+  flex: none;
+}
+
+.streamer {
+  position: relative;
+  overflow: hidden;
+}
+
+.streamer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 20, 51, 0.8);
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.streamer img {
+  transition: all 0.4s ease;
+}
+
+.streamer:hover .overlay {
+  opacity: 1;
+}
+
+.streamer:hover img {
+  transform: scale(1.1);
+}
+
+.footer-top {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--dark);
+}
+
+.footer-top a {
+  color: var(--body);
+}
+
+.footer-top a:hover {
+  color: var(--white);
+}
+
+.footer-bottom {
+  background-color: #242933;
+}
+
+.me {
+  color: #fff;
+}
+
+.me:hover {
+  color: var(--primary);
+}
